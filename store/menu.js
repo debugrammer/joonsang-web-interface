@@ -2,6 +2,11 @@ export const state = () => ({
   menuData: {
     external: [
       {
+        href: 'https://github.com/debugrammer',
+        icon: 'fab fa-github',
+        target: '_blank'
+      },
+      {
         href: 'https://www.linkedin.com/in/iowa7',
         icon: 'fab fa-linkedin',
         target: '_blank'
