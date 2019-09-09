@@ -77,11 +77,13 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-h1
-  font-size: 150px
-  line-height: 150px
-  font-weight: 700
-  color: #ffffff
-  text-shadow: rgba(255, 255, 255, 0.3) 1px 1px, rgba(255, 255, 255, 0.2) 2px 2px, rgba(255, 255, 255, 0.3) 3px 3px
+<style lang="scss" scoped>
+h1 {
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: rgba(255, 255, 255, 0.3) 1px 1px,
+    rgba(255, 255, 255, 0.2) 2px 2px, rgba(255, 255, 255, 0.3) 3px 3px;
+}
 </style>

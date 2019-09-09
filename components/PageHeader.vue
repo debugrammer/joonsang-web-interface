@@ -47,8 +47,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.disabled
-  color: grey
-  pointer-events: none
+<style lang="scss" scoped>
+.disabled {
+  color: grey;
+  pointer-events: none;
+}
 </style>

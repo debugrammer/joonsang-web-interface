@@ -31,14 +31,17 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.v-application
-  font-family: 'Roboto', 'Nanum Gothic', sans-serif
-  line-height: 1.5
-.setting-fab
-  top: 50% !important
-  right: 0
-  border-radius: 0
-.page-wrapper
-  min-height: calc(100vh - 39px - 81px)
+<style lang="scss" scoped>
+.v-application {
+  font-family: 'Roboto', 'Nanum Gothic', sans-serif;
+  line-height: 1.5;
+}
+.setting-fab {
+  top: 50% !important;
+  right: 0;
+  border-radius: 0;
+}
+.page-wrapper {
+  min-height: calc(100vh - 39px - 81px);
+}
 </style>
