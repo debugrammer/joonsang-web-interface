@@ -6,12 +6,12 @@
           <v-card-text
             v-for="(item, i) in experience"
             :key="i"
-            color="secondary"
+            color="primary"
             small
           >
             <div class="py-4">
               <div class="mb-4">
-                <h2 class="headline font-weight-light secondary--text">
+                <h2 class="headline font-weight-light primary--text">
                   {{ item.title }}
                 </h2>
                 <span class="grey--text subtitle-1">
@@ -31,7 +31,7 @@
           <v-timeline-item
             v-for="(item, i) in experience"
             :key="i"
-            color="secondary"
+            color="primary"
             small
           >
             <template v-slot:opposite>
@@ -46,7 +46,7 @@
             </template>
             <div class="py-4">
               <div class="mb-4">
-                <h2 class="headline font-weight-light secondary--text">
+                <h2 class="headline font-weight-light primary--text">
                   {{ item.title }}
                 </h2>
                 <span

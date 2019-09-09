@@ -98,9 +98,9 @@ module.exports = {
       dark: true,
       themes: {
         dark: {
-          primary: '#2a2a2a',
+          primary: '#ff7597',
           accent: '#ff0266',
-          secondary: '#ff7597',
+          secondary: '#2a2a2a',
           info: '#26a69a',
           warning: '#ffc107',
           error: '#dd2c00',
@@ -109,7 +109,9 @@ module.exports = {
       }
     },
     defaultAssets: {
-      font: true,
+      font: {
+        family: 'Roboto'
+      },
       icons: 'mdi'
     }
   },

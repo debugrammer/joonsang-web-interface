@@ -26,7 +26,7 @@
                 <template v-for="(environment, j) in item.environments">
                   <v-chip
                     :key="j"
-                    color="secondary"
+                    color="primary"
                     outlined
                     label
                     class="mx-1"

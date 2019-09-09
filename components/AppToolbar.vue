@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <v-app-bar color="primary" app fixed dark>
+    <v-app-bar color="secondary" app fixed dark>
       <v-img max-width="135" src="/logo.png" alt="joonsang.com" />
       <v-spacer />
       <template v-for="(item, i) in menu.external">
