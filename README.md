@@ -1,18 +1,24 @@
-# joonsang-web-interface
+# Joonsang.com
+> joonsang.com by debugrammer
 
-> joonsang.com
+## Introduction
+My simple portfolio website proudly based on Nuxt.js and Vuetify.js.
 
 ## Build Setup
-
 ``` bash
-# 디펜던시 라이브러리 인스톨
+# Install dependency libraries
 $ npm install
 
-# Nodemon 로컬 서버 실행
+# Execute local Nodemon server
 $ npm run dev
 
-# 실서버 배포
+# Deploy
 $ npm install
 $ npm run build
 $ pm2 start
 ```
+
+## References
+* [Vuetify.js](https://vuetifyjs.com)
+* [Nuxt.js](https://nuxtjs.org)
+* [Vue.js](https://vuejs.org)
