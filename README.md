@@ -1,7 +1,4 @@
 # Joonsang.com
-> joonsang.com by debugrammer
-
-## Introduction
 My simple portfolio website proudly based on Nuxt.js and Vuetify.js.
 
 ## Build Setup
