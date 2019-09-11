@@ -69,18 +69,7 @@ module.exports = {
   /*
    * Nuxt.js modules
    */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/google-analytics',
-    '@nuxtjs/moment'
-  ],
-
-  /*
-   * Axios module configuration
-   * See https://axios.nuxtjs.org/options
-   */
-  axios: {},
+  modules: ['@nuxtjs/google-analytics', '@nuxtjs/moment'],
 
   /*
    * Google Analytics module configuration
