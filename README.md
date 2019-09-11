@@ -1,5 +1,5 @@
 # Joonsang.com
-My simple portfolio website proudly based on Nuxt.js and Vuetify.js.
+My simple portfolio website proudly powered by Nuxt.js and Vuetify.js.
 
 ## Build Setup
 ``` bash
