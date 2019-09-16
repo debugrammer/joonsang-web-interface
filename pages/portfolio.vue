@@ -7,17 +7,16 @@
           <v-flex v-for="(item, i) in portfolio" :key="i" lg4 sm6 xs12>
             <v-card elevation="5" height="100%" outlined>
               <v-img :src="item.imgSrc" height="200px">
-                <v-card-title class="align-end fill-height bottom-gradient">
-                  {{ item.title }}
-                </v-card-title>
+                <v-card-title
+                  class="align-end fill-height bottom-gradient"
+                  v-text="item.title"
+                />
               </v-img>
               <v-card-title class="subtitle-1">
                 <v-icon class="pr-2">mdi-clock-outline</v-icon>
                 Project Dates
               </v-card-title>
-              <v-card-text>
-                {{ item.period }}
-              </v-card-text>
+              <v-card-text v-text="item.period" />
               <v-card-title class="subtitle-1">
                 <v-icon class="pr-2">mdi-code-tags</v-icon>
                 Development Environments
@@ -38,9 +37,7 @@
                 <v-icon class="pr-2">mdi-file-document-outline</v-icon>
                 Project Details
               </v-card-title>
-              <v-card-text>
-                {{ item.description }}
-              </v-card-text>
+              <v-card-text v-text="item.description" />
               <v-divider class="mx-4" />
               <v-card-actions v-for="(link, k) in item.links" :key="k">
                 <v-list-item :href="link.url" target="_blank">
@@ -48,9 +45,7 @@
                     <v-icon>link</v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title>
-                      {{ link.name }}
-                    </v-list-item-title>
+                    <v-list-item-title v-text="link.name" />
                   </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
