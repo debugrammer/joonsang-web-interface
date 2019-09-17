@@ -31,7 +31,7 @@
           <v-list>
             <v-list-item>
               <v-list-item-icon color="grey darken-3">
-                <v-icon>location_on</v-icon>
+                <v-icon>mdi-map-marker</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title>서울</v-list-item-title>
@@ -40,7 +40,7 @@
 
             <v-list-item href="mailto:debugrammer@gmail.com">
               <v-list-item-icon color="grey darken-3">
-                <v-icon>email</v-icon>
+                <v-icon>mdi-email</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title>debugrammer@gmail.com</v-list-item-title>

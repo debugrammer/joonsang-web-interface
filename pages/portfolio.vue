@@ -42,7 +42,7 @@
               <v-card-actions v-for="(link, k) in item.links" :key="k">
                 <v-list-item :href="link.url" target="_blank">
                   <v-list-item-icon color="grey darken-3">
-                    <v-icon>link</v-icon>
+                    <v-icon>mdi-link</v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
                     <v-list-item-title v-text="link.name" />
@@ -89,7 +89,7 @@ export default {
     breadcrumbs() {
       return [
         {
-          icon: 'home'
+          icon: 'mdi-home'
         },
         {
           text: this.pageTitle,

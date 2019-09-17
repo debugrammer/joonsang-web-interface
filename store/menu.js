@@ -20,7 +20,7 @@ export const state = () => ({
     internal: [
       {
         to: '/',
-        icon: 'home',
+        icon: 'mdi-home',
         title: 'Home'
       },
       {

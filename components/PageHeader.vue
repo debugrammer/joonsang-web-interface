@@ -7,7 +7,7 @@
     </div>
     <v-breadcrumbs :items="breadcrumbs">
       <template v-slot:divider>
-        <v-icon>chevron_right</v-icon>
+        <v-icon>mdi-chevron-right</v-icon>
       </template>
       <template v-slot:item="{ item }">
         <v-icon v-if="item.icon" small>

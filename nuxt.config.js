@@ -33,10 +33,6 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Material+Icons'
-      },
-      {
-        rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.10.1/css/all.css'
       }
     ]
