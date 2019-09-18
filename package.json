@@ -1,7 +1,7 @@
 {
   "name": "joonsang-web-interface",
-  "version": "1.0.4",
-  "description": "Introducing Joonsang Park, the web developer.",
+  "version": "1.0.5",
+  "description": "Web developer Joonsang Park's website.",
   "author": "debugrammer",
   "private": true,
   "scripts": {
