@@ -10,9 +10,7 @@ $ npm install
 $ npm run dev
 
 # Deploy
-$ npm install
-$ npm run build
-$ pm2 start
+$ npm run deploy
 ```
 
 ## References

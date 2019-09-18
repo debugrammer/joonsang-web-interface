@@ -7,7 +7,7 @@ module.exports = {
       /*
        * General
        */
-      name: 'joonsang-web-interface',
+      name: 'joonsang-web',
       script: '/home/jpark/joonsang-web-interface/server/index.js',
       cmd: '/home/jpark/joonsang-web-interface',
       interpreter: 'node',
