@@ -10,6 +10,7 @@ $ npm install
 $ npm run dev
 
 # Deploy
+$ pm2 delete joonsang-web
 $ npm run deploy
 ```
 
