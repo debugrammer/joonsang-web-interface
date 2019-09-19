@@ -71,6 +71,7 @@ module.exports = {
 
   /*
    * Google Analytics module configuration
+   * https://github.com/nuxt-community/analytics-module
    */
   googleAnalytics: {
     id: appEnv.googleAnalytics.id
