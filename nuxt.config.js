@@ -1,3 +1,5 @@
+const appEnv = require(`./app.env.${process.env.NODE_ENV}`)
+
 module.exports = {
   mode: 'universal',
 
@@ -5,8 +7,8 @@ module.exports = {
    * Server property
    */
   server: {
-    port: 3000,
-    host: '0.0.0.0'
+    port: appEnv.server.port,
+    host: appEnv.server.host
   },
 
   /*
@@ -71,7 +73,7 @@ module.exports = {
    * Google Analytics module configuration
    */
   googleAnalytics: {
-    id: 'UA-94124239-1'
+    id: appEnv.googleAnalytics.id
   },
 
   /*
