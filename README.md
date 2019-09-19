@@ -1,7 +1,7 @@
 # [Joonsang.com](http://joonsang.com)
-Vue.js 프레임워크인 Nuxt.js와 구글 머티리얼 디자인 컴포넌트 프레임워크인 Vuetify.js로 제작한 개인 포트폴리오 웹사이트입니다.
+> Vue.js 프레임워크인 Nuxt.js와 구글 머티리얼 디자인 컴포넌트 프레임워크인 Vuetify.js로 제작한 개인 포트폴리오 웹사이트입니다.
 
-## Instruction
+## Instructions
 실행을 위해 먼저 환경설정 파일을 생성해야 합니다.
 
 * 로컬 환경설정 파일: `app.env.dev.json`
