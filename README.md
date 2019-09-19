@@ -4,7 +4,7 @@
 ## Instructions
 실행을 위해 먼저 환경설정 파일을 생성해야 합니다.
 
-* 로컬 환경설정 파일: `app.env.dev.json`
+* 로컬 환경설정 파일: `app.env.development.json`
 * 프로덕션 환경설정 파일: `app.env.production.json`
 
 프로젝트 디렉토리 루트에 있는 `app.env.sample.json` 파일을 참고하여 아래와 같이 작성하시면 됩니다.
