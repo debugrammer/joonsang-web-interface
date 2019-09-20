@@ -10,7 +10,7 @@
       <v-footer height="auto" class="pa-4 justify-center">
         <span>
           &copy;{{ $moment().format('YYYY') }} —
-          <strong>joonsang.com</strong>
+          <strong>Joonsang.com</strong>
         </span>
       </v-footer>
     </v-content>
