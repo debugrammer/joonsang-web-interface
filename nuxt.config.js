@@ -32,10 +32,6 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Nanum%20Gothic:400,700,800|Lato:300,400|Poppins:300,400,800'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://use.fontawesome.com/releases/v5.10.1/css/all.css'
       }
     ]
   },

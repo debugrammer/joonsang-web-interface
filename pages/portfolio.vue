@@ -42,7 +42,7 @@
               <v-card-actions v-for="(link, k) in item.links" :key="k">
                 <v-list-item :href="link.url" target="_blank">
                   <v-list-item-icon color="grey darken-3">
-                    <v-icon>mdi-link</v-icon>
+                    <v-icon v-text="link.icon"></v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
                     <v-list-item-title v-text="link.name" />
