@@ -56,14 +56,13 @@ module.exports = {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/eslint-module'
   ],
 
   /*
    * Nuxt.js modules
    */
-  modules: ['@nuxtjs/google-analytics', '@nuxtjs/moment'],
+  modules: ['@nuxtjs/google-analytics', '@nuxtjs/moment', '@nuxtjs/vuetify'],
 
   /*
    * Google Analytics module configuration
