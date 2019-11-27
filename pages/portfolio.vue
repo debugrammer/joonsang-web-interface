@@ -65,18 +65,6 @@ export default {
   components: {
     PageHeader
   },
-  head() {
-    return {
-      title: this.pageTitle,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Portfolio page of web developer Joonsang Park.'
-        }
-      ]
-    }
-  },
   data() {
     return {
       pageTitle: 'Portfolio'
@@ -94,6 +82,18 @@ export default {
         {
           text: this.pageTitle,
           disabled: true
+        }
+      ]
+    }
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Portfolio page of web developer Joonsang Park.'
         }
       ]
     }
