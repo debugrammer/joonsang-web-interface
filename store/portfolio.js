@@ -3,7 +3,7 @@ export const state = () => ({
     {
       imgSrc: '/portfolio/graylog.png',
       title: 'Graylog SDK Spring Boot',
-      period: 'Nov 2019 –',
+      period: 'Nov 2019 – Present',
       environments: ['Spring Boot'],
       description:
         'Graylog REST API를 구현한 Graylog SDK의 Spring Boot Starter입니다. Graylog REST API를 이용해 데이터 시각화 소프트웨어를 개발할 때, Graylog의 요청/응답 스펙에 신경쓸 필요없이 바로 소프트웨어 개발에 집중할 수 있도록 도와줍니다. Graylog Query Builder와 조합하여 더욱 시너지를 낼 수 있습니다. 현재 Maven Central에서 서비스 중입니다.',
@@ -18,7 +18,7 @@ export const state = () => ({
     {
       imgSrc: '/portfolio/graylog.png',
       title: 'Graylog Query Builder',
-      period: 'Oct 2019 –',
+      period: 'Oct 2019 – Present',
       environments: ['Java', 'JavaScript', 'PHP'],
       description:
         '로그 수집 & 분석 툴인 Graylog의 검색 쿼리 빌더입니다. Graylog REST API를 이용하여 개발할 때 여러 조건에 따라 쿼리가 더해지거나 변경될 수 있는데, 쿼리 빌더를 이용하여 우아하게 조건별 검색 쿼리를 만들 수 있습니다. Java, JavaScript, PHP 3가지 버전으로 개발하여 각각 Maven Central, NPM, Packagist에서 서비스 중입니다.',
@@ -33,7 +33,7 @@ export const state = () => ({
     {
       imgSrc: '/portfolio/joonsang.png',
       title: 'Joonsang.com',
-      period: 'Aug 2019 –',
+      period: 'Aug 2019 – Present',
       environments: ['Nuxt.js', 'Vuetify.js'],
       description:
         '웹 개발자인 본인의 웹사이트 재구축 프로젝트입니다. 워드프레스 기반으로 작성했던 기존의 웹사이트를 Vue.js 프레임워크인 Nuxt.js를 사용하여 완전히 새롭게 개발했습니다. 구글 머티리얼 디자인 컴포넌트 프레임워크인 Vuetify.js로 웹사이트 디자인까지 직접 작업하였습니다.',
