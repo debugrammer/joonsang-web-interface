@@ -1,7 +1,7 @@
 # [Joonsang.com](http://joonsang.com)
 > Vue.js 프레임워크인 Nuxt.js와 구글 머티리얼 디자인 컴포넌트 프레임워크인 Vuetify.js로 제작한 개인 포트폴리오 웹사이트입니다.
 
-## Instructions
+## 실행방법
 실행을 위해 먼저 환경설정 파일을 생성해야 합니다.
 
 * 로컬 환경설정 파일: `app.env.development.json`
@@ -21,12 +21,12 @@
 }
 ```
 
-## Build Setup
+## 프로젝트 빌드
 ``` bash
 # 디펜던시 라이브러리 인스톨
 $ npm install
 
-# 로컬 개발서버
+# 로컬 개발서버 실행
 $ npm run dev
 
 # 배포
@@ -34,10 +34,9 @@ $ pm2 delete joonsang-web
 $ npm run deploy
 ```
 
-## References
-* [Vuetify.js](https://vuetifyjs.com)
+## 사용 프레임워크
 * [Nuxt.js](https://nuxtjs.org)
-* [Vue.js](https://vuejs.org)
+* [Vuetify.js](https://vuetifyjs.com)
 
-## License
-[MIT](https://github.com/debugrammer/joonsang-web-interface/blob/master/LICENSE)
+## 라이센스
+* [MIT](https://github.com/debugrammer/joonsang-web-interface/blob/master/LICENSE)
