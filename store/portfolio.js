@@ -6,7 +6,7 @@ export const state = () => ({
       period: 'Nov 2019 – Present',
       environments: ['Spring Boot'],
       description:
-        'Graylog REST API를 구현한 Graylog SDK의 Spring Boot Starter입니다. Graylog REST API를 이용해 데이터 시각화 소프트웨어를 개발할 때, Graylog의 요청/응답 스펙에 신경쓸 필요없이 바로 소프트웨어 개발에 집중할 수 있도록 도와줍니다. Graylog Query Builder와 조합하여 더욱 시너지를 낼 수 있습니다. 현재 Maven Central에서 서비스 중입니다.',
+        'Graylog REST API를 구현한 Graylog SDK의 Spring Boot Starter입니다. Graylog REST API를 이용해 Spring Boot 기반의 데이터 시각화 소프트웨어를 개발할 때 Graylog와의 통신 스펙이나 기본적인 데이터 처리에 신경쓸 필요없이 바로 소프트웨어 개발에 집중할 수 있도록 도와줍니다. Graylog Query Builder와 조합하여 더욱 시너지를 낼 수 있으며, 현재 Maven Central에서 서비스 중입니다.',
       links: [
         {
           icon: 'mdi-github-circle',
