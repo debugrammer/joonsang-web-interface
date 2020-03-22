@@ -3,12 +3,12 @@ export const state = () => ({
     external: [
       {
         href: 'https://github.com/debugrammer',
-        icon: 'mdi-github-circle',
+        icon: 'mdi-github',
         target: '_blank'
       },
       {
         href: 'https://www.linkedin.com/in/iowa7',
-        icon: 'mdi-linkedin-box',
+        icon: 'mdi-linkedin',
         target: '_blank'
       },
       {
