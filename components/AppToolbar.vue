@@ -23,7 +23,7 @@
         </template>
         <v-list>
           <v-list-item-group v-for="(item, i) in menu.internal" :key="i">
-            <v-list-item :to="item.to">
+            <v-list-item :to="path(item.to)">
               <v-list-item-icon>
                 <v-icon v-text="item.icon" />
               </v-list-item-icon>
@@ -36,7 +36,7 @@
       </v-menu>
       <v-toolbar-items v-else>
         <template v-for="(item, i) in menu.internal">
-          <v-btn :key="i" :to="item.to" text>
+          <v-btn :key="i" :to="path(item.to)" text>
             <v-icon left v-text="item.icon" />
             {{ item.title }}
           </v-btn>
@@ -55,6 +55,15 @@ export default {
     ...mapGetters({
       menu: 'menu/getMenuData'
     })
+  },
+  methods: {
+    path(link) {
+      if (this.$i18n.locale === this.$i18n.fallbackLocale) {
+        return link
+      }
+
+      return `/${this.$i18n.locale}${link}`
+    }
   }
 }
 </script>
