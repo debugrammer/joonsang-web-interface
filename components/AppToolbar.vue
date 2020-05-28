@@ -3,6 +3,12 @@
     <v-app-bar color="secondary" app fixed dark>
       <v-img max-width="135" src="/logo.png" alt="joonsang.com" />
       <v-spacer />
+      <v-btn v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" outlined>
+        English
+      </v-btn>
+      <v-btn v-if="$i18n.locale !== 'kr'" :to="switchLocalePath('kr')" outlined>
+        한국어
+      </v-btn>
       <template v-for="(item, i) in menu.external">
         <v-btn :key="i" :href="item.href" :target="item.target" text icon>
           <v-icon v-text="item.icon" />
