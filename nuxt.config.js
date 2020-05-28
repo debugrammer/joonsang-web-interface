@@ -62,7 +62,25 @@ module.exports = {
   /*
    * Nuxt.js modules
    */
-  modules: ['@nuxtjs/google-analytics', '@nuxtjs/moment', '@nuxtjs/vuetify'],
+  modules: [
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/moment',
+    '@nuxtjs/vuetify',
+    [
+      'nuxt-i18n',
+      {
+        locales: ['kr', 'en'],
+        defaultLocale: 'kr',
+        vueI18n: {
+          fallbackLocale: 'kr',
+          messages: {
+            kr: require('./locales/kr.json'),
+            en: require('./locales/en.json')
+          }
+        }
+      }
+    ]
+  ],
 
   /*
    * Google Analytics module configuration
