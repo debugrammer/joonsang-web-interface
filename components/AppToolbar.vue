@@ -4,10 +4,14 @@
       <v-img max-width="135" src="/logo.png" alt="joonsang.com" />
       <v-spacer />
       <v-btn v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" outlined>
-        English
+        <v-icon left>mdi-translate</v-icon> English
       </v-btn>
-      <v-btn v-if="$i18n.locale !== 'kr'" :to="switchLocalePath('kr')" outlined>
-        한국어
+      <v-btn
+        v-else-if="$i18n.locale !== 'kr'"
+        :to="switchLocalePath('kr')"
+        outlined
+      >
+        <v-icon left>mdi-translate</v-icon> 한국어
       </v-btn>
       <template v-for="(item, i) in menu.external">
         <v-btn :key="i" :href="item.href" :target="item.target" text icon>
@@ -23,7 +27,7 @@
         </template>
         <v-list>
           <v-list-item-group v-for="(item, i) in menu.internal" :key="i">
-            <v-list-item :to="path(item.to)">
+            <v-list-item :to="path(item.to)" exact>
               <v-list-item-icon>
                 <v-icon v-text="item.icon" />
               </v-list-item-icon>
@@ -36,7 +40,7 @@
       </v-menu>
       <v-toolbar-items v-else>
         <template v-for="(item, i) in menu.internal">
-          <v-btn :key="i" :to="path(item.to)" text>
+          <v-btn :key="i" :to="path(item.to)" exact text>
             <v-icon left v-text="item.icon" />
             {{ item.title }}
           </v-btn>
