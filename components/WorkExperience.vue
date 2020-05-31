@@ -47,7 +47,7 @@
             <div class="py-4">
               <div class="mb-4">
                 <h2 class="headline font-weight-light primary--text">
-                  {{ item.title }}
+                  {{ $t(item.title) }}
                 </h2>
                 <span
                   v-if="$vuetify.breakpoint.smAndDown"
@@ -59,7 +59,7 @@
                 </span>
               </div>
               <!--eslint-disable-next-line vue/no-v-html-->
-              <div v-html="item.content"></div>
+              <div v-html="$t(item.content)"></div>
             </div>
           </v-timeline-item>
         </v-timeline>
