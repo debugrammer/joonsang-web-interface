@@ -22,5 +22,45 @@
         "content": "Korea Air Force intranet development<br />- Optimized intranet web pages – deleted and edited no-longer-used, redundant files, codes, and queries<br />- Boosted up page loading speeds – managed server memory for preventing wasting memory<br /><br />Web development<br />- Managed and developed EJB framework-based web portal<br />- Developed intranet web pages with JSP, PHP, HTML, JavaScript, Ajax, and Flash-ActionScript<br />- Managed OC4J web server and few Apache web servers on IBM AIX<br />- Managed and designed Oracle database queries<br />- Maintained WAS, databases, firewalls, encryption devices, UPS, and thermo-hygrostat<br /><br />Software development<br />- Developed Java software for generating server passwords<br />- Developed civilian access control system with Visual C++"
       }
     }
+  },
+  "portfolio": {
+    "portfolio": {
+      "gShopperApp": {
+        "title": "Gshopper App",
+        "description": "Developed android shopping app receiving push notifications. Developed mobile web shopping mall with Laravel 5.4. Developed request/response APIs for communicating with enterprise system."
+      },
+      "rocketMms": {
+        "title": "Rocket MMS",
+        "description": "Developed android app sending out MMS automatically by user's settings. Developed associating website with RESTful APIs on CodeIgniter 3.2 PHP framework."
+      },
+      "velocityTactics": {
+        "title": "Velocity Tactics",
+        "description": "Developed a new website with implementations of Shopify Liquid."
+      },
+      "my1Stop": {
+        "title": "My1Stop",
+        "description": "Fixed website front-end/back-end errors and cleaned up extensions."
+      },
+      "kwCattle": {
+        "title": "KW Cattle",
+        "description": "Fixed frontend/backend errors and cleaned up website design. Developed and customized responsive data table and video gallery."
+      },
+      "journeyThroughEurope": {
+        "title": "Journey Through Europe",
+        "description": "Project for Java software development class"
+      },
+      "yonabang": {
+        "title": "Yonabang",
+        "description": "Add/remove/rearrange backend-frontend functions, and integrate web boards with another PHP base website."
+      },
+      "standardOrderSheetGenerator": {
+        "title": "Standard Order Sheet Generator",
+        "description": "The program is for web shopping mall. Interpark International sells their products through many open markets. For that, there's an issue that the order forms of each website are different. So they must rearrange all different forms of order sheets and then put additional specifications for each item such as product code and location of the warehouse that the item is stored. However, after release of the program, they can simply put all different order sheets data to one excel file and set pre-made product code table on the program, then it will generate Interpark International's standard order form."
+      },
+      "civilianAccessControlSystem": {
+        "title": "Civilian Access Control System",
+        "description": "License plate recognition included, communicate with oracle database server, and supports IP cam."
+      }
+    }
   }
 }

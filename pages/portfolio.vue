@@ -9,7 +9,7 @@
               <v-img :src="item.imgSrc" height="200px">
                 <v-card-title
                   class="align-end fill-height bottom-gradient"
-                  v-text="item.title"
+                  v-text="$t(item.title)"
                 />
               </v-img>
               <v-card-title class="subtitle-1">
@@ -37,7 +37,7 @@
                 <v-icon class="pr-2">mdi-file-document-outline</v-icon>
                 Project Details
               </v-card-title>
-              <v-card-text v-text="item.description" />
+              <v-card-text v-text="$t(item.description)" />
               <v-divider class="mx-4" />
               <v-card-actions v-for="(link, k) in item.links" :key="k">
                 <v-list-item :href="link.url" target="_blank">
