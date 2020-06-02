@@ -18,7 +18,9 @@
           <v-icon v-text="item.icon" />
         </v-btn>
       </template>
-      <v-divider vertical />
+
+      <v-divider vertical></v-divider>
+
       <v-menu v-if="$vuetify.breakpoint.xsOnly" offset-y>
         <template v-slot:activator="{ on }">
           <v-btn icon v-on="on">

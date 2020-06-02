@@ -38,7 +38,9 @@
                 Project Details
               </v-card-title>
               <v-card-text v-text="$t(item.description)" />
-              <v-divider class="mx-4" />
+
+              <v-divider class="mx-4"></v-divider>
+
               <v-card-actions v-for="(link, k) in item.links" :key="k">
                 <v-list-item :href="link.url" target="_blank">
                   <v-list-item-icon color="grey darken-3">
