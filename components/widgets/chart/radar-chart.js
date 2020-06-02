@@ -17,19 +17,22 @@ export default {
         legend: {
           display: false
         },
-        tooltips: {
-          mode: 'index',
-          intersect: true
-        },
-        hover: {
-          mode: 'nearest',
-          intersect: true
-        },
         scale: {
+          angleLines: {
+            color: 'rgba(255, 255, 255, 0.3)'
+          },
+          gridLines: {
+            color: 'rgba(255, 255, 255, 0.3)'
+          },
+          pointLabels: {
+            fontColor: 'rgba(255, 255, 255, 0.8)'
+          },
           ticks: {
             suggestedMin: 0,
             suggestedMax: 10,
-            beginAtZero: true
+            beginAtZero: true,
+            backdropColor: 'transparent',
+            fontColor: 'rgba(255, 255, 255, 0.6)'
           }
         }
       })
