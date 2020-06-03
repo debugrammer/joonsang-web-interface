@@ -88,7 +88,7 @@ export default {
         datasets: [
           {
             label: 'Skill Level',
-            data: [5, 7, 9, 7, 5, 5],
+            data: [6, 8, 9, 7, 5, 5],
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgb(255, 99, 132)',
             pointBackgroundColor: 'rgb(255, 99, 132)',

@@ -18,6 +18,15 @@
                 class="headline mb-1"
                 v-text="item.name"
               ></v-list-item-title>
+              <v-list-item-subtitle>
+                <v-rating
+                  :value="item.level"
+                  length="10"
+                  size="14"
+                  dense
+                  readonly
+                ></v-rating>
+              </v-list-item-subtitle>
             </v-list-item-content>
             <v-list-item-avatar tile size="60">
               <v-img :src="item.imgSrc" contain></v-img>
