@@ -1,10 +1,10 @@
 <template>
   <div id="page-home">
     <v-container grid-list-xl fluid pt-0>
-      <main-parallax />
-      <skills />
-      <about />
-      <work-experience />
+      <main-parallax></main-parallax>
+      <skills></skills>
+      <about></about>
+      <work-experience></work-experience>
     </v-container>
   </div>
 </template>

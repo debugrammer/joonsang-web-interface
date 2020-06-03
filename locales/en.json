@@ -1,5 +1,12 @@
 {
   "index": {
+    "mainParallax": {
+      "quote": "\"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.\" – Linus Torvalds"
+    },
+    "about": {
+      "name": "Park, Joonsang",
+      "location": "Seoul, South Korea"
+    },
     "workExperience": {
       "cafe24": {
         "title": "Cafe24 | Web Developer",

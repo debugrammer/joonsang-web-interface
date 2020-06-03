@@ -3,7 +3,7 @@
     <v-container fluid fill-height>
       <v-layout align-center justify-center row>
         <v-flex v-if="textStatusCode" xs3 mr-3>
-          <v-img :src="errorImage" :alt="textStatusCode" />
+          <v-img :src="errorImage" :alt="textStatusCode"></v-img>
         </v-flex>
         <div class="text-md-center">
           <h1>{{ textStatusCode }}</h1>

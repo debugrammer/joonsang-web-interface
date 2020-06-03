@@ -8,9 +8,9 @@
           </v-list-item-content>
         </v-list-item>
         <v-row>
-          <v-col lg="7">
+          <v-col lg="6" md="6" sm="12">
             <v-card-title class="pt-0">Name</v-card-title>
-            <v-card-text>박준상</v-card-text>
+            <v-card-text v-text="$t('index.about.name')"></v-card-text>
             <v-card-title>Education</v-card-title>
             <v-card-text>
               STONY BROOK UNIVERSITY, Stony Brook, New York<br />
@@ -31,7 +31,7 @@
             </v-card-text>
           </v-col>
 
-          <v-col lg="5">
+          <v-col lg="6" md="6" sm="12">
             <radar-chart :chart-data="skillSetRadarChartData"></radar-chart>
           </v-col>
         </v-row>
@@ -45,7 +45,9 @@
                 <v-icon>mdi-map-marker</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>서울</v-list-item-title>
+                <v-list-item-title
+                  v-text="$t('index.about.location')"
+                ></v-list-item-title>
               </v-list-item-content>
             </v-list-item>
 
@@ -80,14 +82,13 @@ export default {
           'Front-end',
           'Back-end',
           'Database',
-          'Server management',
-          'System Architecture'
+          'Server Management',
+          'System Design'
         ],
         datasets: [
           {
             label: 'Skill Level',
             data: [5, 7, 9, 7, 5, 5],
-            fill: true,
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgb(255, 99, 132)',
             pointBackgroundColor: 'rgb(255, 99, 132)',

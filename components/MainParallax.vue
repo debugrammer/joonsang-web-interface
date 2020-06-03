@@ -17,11 +17,7 @@
     </v-flex>
     <v-flex xs12 mx-3>
       <v-row align="center" justify="center">
-        <div class="subtitle-1">
-          "좋은 프로그래머 대부분은 돈이나 대중에게 받을 찬사를 기대하고
-          프로그래밍을 하지 않고, 프로그래밍이 재미있어서 한다." – 리누스
-          토르발스
-        </div>
+        <div class="subtitle-1" v-text="$t('index.mainParallax.quote')"></div>
       </v-row>
     </v-flex>
   </v-layout>

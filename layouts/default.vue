@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <app-toolbar />
+    <app-toolbar></app-toolbar>
     <v-content>
       <!-- Page Content -->
       <div class="page-wrapper">
@@ -15,7 +15,7 @@
       </v-footer>
     </v-content>
     <!-- Go to top -->
-    <app-fab />
+    <app-fab></app-fab>
   </v-app>
 </template>
 

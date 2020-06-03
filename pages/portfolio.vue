@@ -1,7 +1,7 @@
 <template>
   <div id="page-portfolio">
     <v-container grid-list-xl fluid>
-      <page-header :breadcrumbs="breadcrumbs" />
+      <page-header :breadcrumbs="breadcrumbs"></page-header>
       <client-only>
         <v-layout row wrap>
           <v-flex v-for="(item, i) in portfolio" :key="i" lg4 sm6 xs12>
@@ -10,13 +10,13 @@
                 <v-card-title
                   class="align-end fill-height bottom-gradient"
                   v-text="$t(item.title)"
-                />
+                ></v-card-title>
               </v-img>
               <v-card-title class="subtitle-1">
                 <v-icon class="pr-2">mdi-clock-outline</v-icon>
                 Project Dates
               </v-card-title>
-              <v-card-text v-text="item.period" />
+              <v-card-text v-text="item.period"></v-card-text>
               <v-card-title class="subtitle-1">
                 <v-icon class="pr-2">mdi-code-tags</v-icon>
                 Development Environments
@@ -30,14 +30,14 @@
                     label
                     class="mx-1"
                     v-text="environment"
-                  />
+                  ></v-chip>
                 </template>
               </v-card-text>
               <v-card-title class="subtitle-1">
                 <v-icon class="pr-2">mdi-file-document-outline</v-icon>
                 Project Details
               </v-card-title>
-              <v-card-text v-text="$t(item.description)" />
+              <v-card-text v-text="$t(item.description)"></v-card-text>
 
               <v-divider class="mx-4"></v-divider>
 
@@ -47,7 +47,7 @@
                     <v-icon v-text="link.icon"></v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title v-text="link.name" />
+                    <v-list-item-title v-text="link.name"></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
               </v-card-actions>

@@ -1,8 +1,8 @@
 <template>
   <client-only>
     <v-app-bar color="secondary" app fixed dark>
-      <v-img max-width="135" src="/logo.png" alt="joonsang.com" />
-      <v-spacer />
+      <v-img max-width="135" src="/logo.png" alt="joonsang.com"></v-img>
+      <v-spacer></v-spacer>
       <v-btn v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" outlined>
         <v-icon left>mdi-translate</v-icon> English
       </v-btn>
@@ -15,7 +15,7 @@
       </v-btn>
       <template v-for="(item, i) in menu.external">
         <v-btn :key="i" :href="item.href" :target="item.target" text icon>
-          <v-icon v-text="item.icon" />
+          <v-icon v-text="item.icon"></v-icon>
         </v-btn>
       </template>
 
@@ -31,10 +31,10 @@
           <v-list-item-group v-for="(item, i) in menu.internal" :key="i">
             <v-list-item :to="path(item.to)" exact>
               <v-list-item-icon>
-                <v-icon v-text="item.icon" />
+                <v-icon v-text="item.icon"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title v-text="item.title" />
+                <v-list-item-title v-text="item.title"></v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -43,7 +43,7 @@
       <v-toolbar-items v-else>
         <template v-for="(item, i) in menu.internal">
           <v-btn :key="i" :to="path(item.to)" exact text>
-            <v-icon left v-text="item.icon" />
+            <v-icon left v-text="item.icon"></v-icon>
             {{ item.title }}
           </v-btn>
         </template>
