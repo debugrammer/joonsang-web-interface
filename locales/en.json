@@ -3,6 +3,23 @@
     "mainParallax": {
       "quote": "\"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.\" – Linus Torvalds"
     },
+    "skills": {
+      "java": {
+        "description": "번역 필요"
+      },
+      "php": {
+        "description": "번역 필요"
+      },
+      "javascript": {
+        "description": "번역 필요"
+      },
+      "nuxt": {
+        "description": "번역 필요"
+      },
+      "vue": {
+        "description": "번역 필요"
+      }
+    },
     "about": {
       "name": "Park, Joonsang",
       "location": "Seoul, South Korea",

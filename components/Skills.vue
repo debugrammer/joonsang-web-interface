@@ -32,7 +32,7 @@
               <v-img :src="item.imgSrc" contain></v-img>
             </v-list-item-avatar>
           </v-list-item>
-          <v-card-text v-text="item.description"></v-card-text>
+          <v-card-text v-text="$t(item.description)"></v-card-text>
         </v-card>
       </v-col>
     </v-row>
