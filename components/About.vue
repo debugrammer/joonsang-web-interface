@@ -1,29 +1,22 @@
 <template>
   <v-row justify="center">
-    <v-col lg="9">
-      <v-card outlined>
+    <v-col lg="5">
+      <v-card height="100%" outlined>
         <v-list-item>
           <v-list-item-content class="py-0">
             <div class="overline">ABOUT</div>
           </v-list-item-content>
         </v-list-item>
-        <v-row>
-          <v-col lg="6" md="6" sm="12">
-            <v-card-title class="pt-0">Name</v-card-title>
-            <v-card-text v-text="$t('index.about.name')"></v-card-text>
-            <v-card-title>Education</v-card-title>
-            <v-card-text>
-              STONY BROOK UNIVERSITY, Stony Brook, New York<br />
-              B.S. in Computer Science, Dec. 2015
-            </v-card-text>
-            <v-card-title>Biography</v-card-title>
-            <v-card-text v-text="$t('index.about.biography')"></v-card-text>
-          </v-col>
 
-          <v-col lg="6" md="6" sm="12">
-            <radar-chart :chart-data="skillSetRadarChartData"></radar-chart>
-          </v-col>
-        </v-row>
+        <v-card-title class="pt-0">Name</v-card-title>
+        <v-card-text v-text="$t('index.about.name')"></v-card-text>
+        <v-card-title>Education</v-card-title>
+        <v-card-text>
+          STONY BROOK UNIVERSITY, Stony Brook, New York<br />
+          B.S. in Computer Science, Dec. 2015
+        </v-card-text>
+        <v-card-title>Biography</v-card-title>
+        <v-card-text v-text="$t('index.about.biography')"></v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
@@ -52,6 +45,45 @@
         </v-card-actions>
       </v-card>
     </v-col>
+    <v-col lg="4">
+      <v-card height="100%" outlined>
+        <v-list-item>
+          <v-list-item-content class="py-0">
+            <div class="overline">SKILLSET</div>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-card-text>
+          <radar-chart
+            :chart-data="skillsetRadarChartData"
+            :height="250"
+          ></radar-chart>
+          <v-simple-table>
+            <template v-slot:default>
+              <tbody>
+                <tr v-for="item in skillsets" :key="item.type">
+                  <td>{{ item.type }}</td>
+                  <td>
+                    <template v-for="skill in item.skills">
+                      <v-chip
+                        :key="skill"
+                        color="primary"
+                        small
+                        label
+                        outlined
+                        class="mx-1"
+                      >
+                        {{ skill }}
+                      </v-chip>
+                    </template>
+                  </td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </v-card-text>
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 
@@ -65,7 +97,7 @@ export default {
   },
   data() {
     return {
-      skillSetRadarChartData: {
+      skillsetRadarChartData: {
         labels: [
           'UI/UX Design',
           'Front-end',
@@ -86,7 +118,33 @@ export default {
             pointHoverBorderColor: 'rgb(255, 99, 132)'
           }
         ]
-      }
+      },
+      skillsets: [
+        {
+          type: 'UI/UX Design',
+          skills: ['Vuetify']
+        },
+        {
+          type: 'Front-end',
+          skills: ['Vue.js']
+        },
+        {
+          type: 'Back-end',
+          skills: ['Java', 'PHP']
+        },
+        {
+          type: 'Database',
+          skills: ['MariaDB']
+        },
+        {
+          type: 'Server Management',
+          skills: ['CentOS']
+        },
+        {
+          type: 'System Design',
+          skills: ['Dummy']
+        }
+      ]
     }
   }
 }
