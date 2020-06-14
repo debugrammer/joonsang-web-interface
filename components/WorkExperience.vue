@@ -12,7 +12,7 @@
             <div class="py-4">
               <div class="mb-4">
                 <h2 class="headline font-weight-light primary--text">
-                  {{ item.title }}
+                  {{ $t(item.title) }}
                 </h2>
                 <span class="grey--text subtitle-1">
                   {{ formatYearMonth(item.start) }} –
@@ -21,7 +21,7 @@
                 </span>
               </div>
               <!--eslint-disable-next-line vue/no-v-html-->
-              <div class="body-1 white--text" v-html="item.content"></div>
+              <div class="body-1 white--text" v-html="$t(item.content)"></div>
             </div>
           </v-card-text>
         </v-card>
