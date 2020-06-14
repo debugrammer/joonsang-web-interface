@@ -5,22 +5,22 @@
     },
     "skills": {
       "java": {
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "php": {
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "javascript": {
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "springBoot": {
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "nuxt": {
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "vue": {
-        "description": "번역 필요"
+        "description": "Translation required."
       }
     },
     "about": {
@@ -55,51 +55,51 @@
     "portfolio": {
       "graylogSdkSpringBoot": {
         "title": "Graylog SDK Spring Boot",
-        "description": "번역 필요"
+        "description": "The Graylog SDK Spring Boot Starter implements Graylog REST API. It helps to concentrate on software development directly without any protocol specifications with Graylog server or necessary data processing when people need to develop a data visualization software based on Spring Boot with Graylog REST API."
       },
       "graylogQueryBuilder": {
         "title": "Graylog Query Builder",
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "joonsang": {
         "title": "Joonsang.com",
-        "description": "번역 필요"
+        "description": "Translation required."
       },
       "gShopperApp": {
         "title": "Gshopper App",
-        "description": "Developed android shopping app receiving push notifications. Developed mobile web shopping mall with Laravel 5.4. Developed request/response APIs for communicating with enterprise system."
+        "description": "Translation required."
       },
       "rocketMms": {
         "title": "Rocket MMS",
-        "description": "Developed android app sending out MMS automatically by user's settings. Developed associating website with RESTful APIs on CodeIgniter 3.2 PHP framework."
+        "description": "Translation required."
       },
       "velocityTactics": {
         "title": "Velocity Tactics",
-        "description": "Developed a new website with implementations of Shopify Liquid."
+        "description": "Translation required."
       },
       "my1Stop": {
         "title": "My1Stop",
-        "description": "Fixed website front-end/back-end errors and cleaned up extensions."
+        "description": "Translation required."
       },
       "kwCattle": {
         "title": "KW Cattle",
-        "description": "Fixed frontend/backend errors and cleaned up website design. Developed and customized responsive data table and video gallery."
+        "description": "Translation required."
       },
       "journeyThroughEurope": {
         "title": "Journey Through Europe",
-        "description": "Project for Java software development class"
+        "description": "Translation required."
       },
       "yonabang": {
         "title": "Yonabang",
-        "description": "Add/remove/rearrange backend-frontend functions, and integrate web boards with another PHP base website."
+        "description": "Translation required."
       },
       "standardOrderSheetGenerator": {
         "title": "Standard Order Sheet Generator",
-        "description": "The program is for web shopping mall. Interpark International sells their products through many open markets. For that, there's an issue that the order forms of each website are different. So they must rearrange all different forms of order sheets and then put additional specifications for each item such as product code and location of the warehouse that the item is stored. However, after release of the program, they can simply put all different order sheets data to one excel file and set pre-made product code table on the program, then it will generate Interpark International's standard order form."
+        "description": "The program is for the web shopping mall. Interpark International sells its products through many open markets. For that, there's an issue that the order forms of each website are different. So they must rearrange all various types of order sheets and then put additional specifications for each item, such as product code and warehouse location. However, after the release of the program, they can put all different order sheets data to one excel file and set a pre-made product code table on the application. It will generate Interpark International's standard order form."
       },
       "civilianAccessControlSystem": {
         "title": "Civilian Access Control System",
-        "description": "License plate recognition included, communicate with oracle database server, and supports IP cam."
+        "description": "The system is for automating the management of civilian access control. It communicates with the Oracle database for verifying access permission and recording access time. It supports license plate recognition with IP cam and opening and closing gate barrier."
       }
     }
   }
