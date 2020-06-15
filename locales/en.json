@@ -87,11 +87,11 @@
       },
       "journeyThroughEurope": {
         "title": "Journey Through Europe",
-        "description": "Translation required."
+        "description": "It is the project in Java individual project class in college. The player first visits all of the cities in the given cards to win the game. It is available to move by walk, ship, and flight. Chance cards are also available, so the players may have the chance to visit specific cities. CPU AI works as Dijkstra algorithm."
       },
       "yonabang": {
         "title": "Yonabang",
-        "description": "Translation required."
+        "description": "This project is for the renewal of Yonsei University College of Dentistry community website. Stabilizing the site, restructuring menus with web boards, and integrating web board with Yonsei University College of Dentistry alumni association website are the leading jobs in the project."
       },
       "standardOrderSheetGenerator": {
         "title": "Standard Order Sheet Generator",
