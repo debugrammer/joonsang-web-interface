@@ -97,6 +97,10 @@ export const state = () => ({
           level: 5
         },
         {
+          name: 'PM2',
+          level: 6
+        },
+        {
           name: 'HAProxy',
           level: 3
         },
