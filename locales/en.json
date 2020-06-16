@@ -71,19 +71,19 @@
       },
       "rocketMms": {
         "title": "Rocket MMS",
-        "description": "Translation required."
+        "description": "It is the project for developing the Rocket MMS Android app and website. The app automatically sends out MMS by the user's settings. The site with an API server services on the CodeIgniter PHP framework."
       },
       "velocityTactics": {
         "title": "Velocity Tactics",
-        "description": "Translation required."
+        "description": "This project is for constructing a new website of Velocity Tactics, which is an affiliate company of Ward Kraft. Shopify shopping mall solution is the base of the website. In this project, customizing front-end with Liquid and developing custom plugin are the leading jobs."
       },
       "my1Stop": {
         "title": "My1Stop",
-        "description": "Translation required."
+        "description": "The project is for stabilizing the My1Stop website, which is an affiliate company of Ward Kraft. Migrating database, fixing email sending errors, fixing website down, fixing collision with Magento extensions, and updating Magento framework are the leading jobs in the project."
       },
       "kwCattle": {
         "title": "KW Cattle",
-        "description": "Translation required."
+        "description": "The project is for the renewal of KW Cattle website, which is an affiliate company of Ward Kraft. Fixing front-end and back-end errors with redesigning theme and customizing WordPress plugins are the leading jobs in the project."
       },
       "journeyThroughEurope": {
         "title": "Journey Through Europe",
