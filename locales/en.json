@@ -59,15 +59,15 @@
       },
       "graylogQueryBuilder": {
         "title": "Graylog Query Builder",
-        "description": "Translation required."
+        "description": "It is a search query builder of Graylog, which is the tool for collecting and analyzing system logs. When developing with Graylog REST APIs, search queries can be added or modified by various conditions. However, one can compose elegant search queries with Graylog Query Builder."
       },
       "joonsang": {
         "title": "Joonsang.com",
-        "description": "Translation required."
+        "description": "It is the project for reconstructing my portfolio website. Completely reconstruct the website with Nuxt.js in this project. Front-end design of the website is by myself with Vuetify.js which is Google's Material Design component framework."
       },
       "gShopperApp": {
         "title": "Gshopper App",
-        "description": "Translation required."
+        "description": "Gshopper App is the project developing an Android shopping app and mobile web shopping mall. Android app services on native WebView, and provides intro slides and push messages about marketing or order status. The website services on the Laravel PHP framework and provides APIs for integrating shopping mall with ERP software."
       },
       "rocketMms": {
         "title": "Rocket MMS",
