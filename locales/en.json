@@ -63,7 +63,7 @@
       },
       "joonsang": {
         "title": "Joonsang.com",
-        "description": "It is the project for reconstructing my portfolio website. Completely reconstruct the website with Nuxt.js in this project. Front-end design of the website is by myself with Vuetify.js which is Google's Material Design component framework."
+        "description": "It is the project for reconstructing my portfolio website. Completely rebuild the site with Nuxt.js in this project. The front-end design of the website is by myself with Vuetify.js, which is Google's Material Design component framework."
       },
       "gShopperApp": {
         "title": "Gshopper App",
