@@ -11,7 +11,7 @@ export const state = () => ({
     datasets: [
       {
         label: 'Skill Level',
-        data: [6, 7, 8, 6, 5, 5],
+        data: [6, 8, 9, 6, 5, 5],
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
         pointBackgroundColor: 'rgb(255, 99, 132)',
@@ -27,11 +27,11 @@ export const state = () => ({
       skills: [
         {
           name: 'HTML',
-          level: 8
+          level: 7
         },
         {
           name: 'CSS',
-          level: 7
+          level: 6
         },
         {
           name: 'JavaScript',
@@ -44,6 +44,18 @@ export const state = () => ({
         {
           name: 'Vue.js',
           level: 6
+        },
+        {
+          name: 'Nuxt.js',
+          level: 8
+        },
+        {
+          name: 'Bootstrap',
+          level: 8
+        },
+        {
+          name: 'Vuetify.js',
+          level: 8
         }
       ]
     },
@@ -61,6 +73,18 @@ export const state = () => ({
         {
           name: 'Node.js',
           level: 5
+        },
+        {
+          name: 'Spring Boot',
+          level: 8
+        },
+        {
+          name: 'Laravel',
+          level: 6
+        },
+        {
+          name: 'Express.js',
+          level: 6
         }
       ]
     },
