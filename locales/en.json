@@ -8,19 +8,19 @@
         "description": "He is skilled in Java. It is his primary language since 2009. He starts experience from Java 1.4 web service, and now, he constructs and operates Java 11 to 14 base service. His the most work with Java is developing web service, but he has some software and Android development experience."
       },
       "php": {
-        "description": "Translation required."
+        "description": "It was the first time he did PHP programming when he was in charge of maintaining PHP 4.4 base legacy web service in 2011. In 2016, about right after the release of PHP 7, he started the professional experience with PHP language. He has the expertise of constructing WordPress, Magento, CodeIgniter, Laravel web service with PHP 7."
       },
       "javascript": {
-        "description": "Translation required."
+        "description": "He started the professional experience with VanillaJS and jQuery since 2009. Currently, he constructs the front-end web service base on ECMAScript 2016-2019 with Babel. He has the expertise of building front-end web service with design frameworks like Bootstrap, Framework7, and Node.js framework like Express.js with PM2."
       },
       "springBoot": {
-        "description": "Translation required."
+        "description": "He started Java framework experience from Servlet MVC and EJB, then turned to Spring Boot since 2018. He has the expertise that migrating Spring Boot 1.5 based web service to Spring Boot 2, and constructing Spring Boot 2.3 based services. Meanwhile, he has a Maven Central repository that uploaded his Spring Boot Starter library."
       },
       "nuxt": {
-        "description": "Translation required."
+        "description": "In 2018, he started Nuxt.js because it adopted as a front-end framework for the API log visualization system. Currently, he constructs several Nuxt.js SSR based front-end web services, and his portfolio website as well. He has expertise in building data visualization and admin services."
       },
       "vue": {
-        "description": "Translation required."
+        "description": "He started the professional experience with Vue.js to start Nuxt.js projects in 2018. He adopts Vue.js as a JavaScript framework because it can work with VanillaJS, and structured separated HTML and JavaScript, unlike other candidates such as AngularJS, React. He has expertise in building front-end apps with Vuetify.js, the design framework that based on Vue.js."
       }
     },
     "about": {
