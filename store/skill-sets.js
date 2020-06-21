@@ -6,7 +6,7 @@ export const state = () => ({
       'Back-end',
       'Database',
       'Server Mgmt.',
-      'System Design'
+      'Architecture'
     ],
     datasets: [
       {
