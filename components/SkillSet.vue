@@ -7,7 +7,7 @@
     </v-list-item>
 
     <v-card-text>
-      <radar-chart :chart-data="skillSetRadarChart" :height="300"></radar-chart>
+      <radar-chart :chart-data="skillSetRadarChart" :height="250"></radar-chart>
     </v-card-text>
 
     <v-card-text>
