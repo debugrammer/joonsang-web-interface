@@ -5,7 +5,7 @@ export const state = () => ({
       'Front-end',
       'Back-end',
       'Database',
-      'Server Management',
+      'Server Mgmt.',
       'System Design'
     ],
     datasets: [
@@ -106,7 +106,7 @@ export const state = () => ({
       ]
     },
     {
-      type: 'Server Management',
+      type: 'Server Mgmt.',
       skills: [
         {
           name: 'CentOS',
