@@ -5,7 +5,7 @@
 
       <v-spacer></v-spacer>
 
-      <template v-if="$vuetify.breakpoint.xsOnly">
+      <template v-if="$vuetify.breakpoint.mdAndDown">
         <v-btn
           v-if="$i18n.locale !== 'en'"
           :to="switchLocalePath('en')"
@@ -39,6 +39,8 @@
           <v-icon left>mdi-translate</v-icon> 한국어
         </v-btn>
       </template>
+
+      <v-divider v-if="$vuetify.breakpoint.mdAndDown" vertical></v-divider>
 
       <v-menu v-if="$vuetify.breakpoint.xsOnly" offset-y>
         <template v-slot:activator="{ on }">
