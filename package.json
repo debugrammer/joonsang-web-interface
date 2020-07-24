@@ -9,14 +9,14 @@
     "deploy": "npm install && nuxt build && pm2 start"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.3.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/moment": "^1.6.1",
     "chart.js": "^2.9.3",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "lodash": "^4.17.15",
-    "nuxt": "^2.13.0",
-    "nuxt-i18n": "^6.12.2",
+    "lodash": "^4.17.19",
+    "nuxt": "^2.13.3",
+    "nuxt-i18n": "^6.13.1",
     "vue-chartjs": "^3.5.0"
   },
   "devDependencies": {
@@ -24,7 +24,7 @@
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.0",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
