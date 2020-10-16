@@ -1,7 +1,7 @@
 const appEnv = require(`./app.env.${process.env.NODE_ENV}`)
 
 module.exports = {
-  mode: 'universal',
+  ssr: true,
 
   /*
    * Nuxt.js Telemetry settings
