@@ -12,7 +12,7 @@ export const state = () => ({
         target: '_blank'
       },
       {
-        href: 'http://blog.joonsang.com',
+        href: 'https://blog.naver.com/takane7',
         icon: 'mdi-blogger',
         target: '_blank'
       }
