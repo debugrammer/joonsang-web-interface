@@ -19,7 +19,7 @@ module.exports = {
       instances: '2',
       exec_mode: 'cluster',
       watch: false,
-      max_memory_restart: '128M',
+      max_memory_restart: '160M',
 
       /*
        * Log files
