@@ -43,7 +43,7 @@
       <v-divider v-if="$vuetify.breakpoint.mdAndDown" vertical></v-divider>
 
       <v-menu v-if="$vuetify.breakpoint.xsOnly" offset-y>
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn icon v-on="on">
             <v-icon>mdi-menu-down</v-icon>
           </v-btn>
@@ -69,7 +69,7 @@
       <v-divider vertical></v-divider>
 
       <v-menu v-if="$vuetify.breakpoint.xsOnly" offset-y>
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn icon v-on="on">
             <v-icon>mdi-dots-vertical</v-icon>
           </v-btn>

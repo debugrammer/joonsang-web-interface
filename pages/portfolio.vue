@@ -72,6 +72,18 @@ export default {
       pageTitle: 'Portfolio'
     }
   },
+  head() {
+    return {
+      title: this.pageTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Portfolio page of web developer Joonsang Park.'
+        }
+      ]
+    }
+  },
   computed: {
     ...mapGetters({
       portfolio: 'portfolio/getPortfolioData'
@@ -84,18 +96,6 @@ export default {
         {
           text: this.pageTitle,
           disabled: true
-        }
-      ]
-    }
-  },
-  head() {
-    return {
-      title: this.pageTitle,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Portfolio page of web developer Joonsang Park.'
         }
       ]
     }

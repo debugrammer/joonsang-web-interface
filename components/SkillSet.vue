@@ -12,7 +12,7 @@
 
     <v-card-text>
       <v-simple-table>
-        <template v-slot:default>
+        <template #default>
           <tbody>
             <tr v-for="item in skillSets" :key="item.type">
               <td>{{ item.type }}</td>

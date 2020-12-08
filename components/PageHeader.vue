@@ -6,10 +6,10 @@
       </h2>
     </div>
     <v-breadcrumbs :items="breadcrumbs">
-      <template v-slot:divider>
+      <template #divider>
         <v-icon>mdi-chevron-right</v-icon>
       </template>
-      <template v-slot:item="{ item }">
+      <template #item="{ item }">
         <v-icon v-if="item.icon" small>
           {{ item.icon }}
         </v-icon>

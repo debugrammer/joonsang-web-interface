@@ -34,7 +34,7 @@
             color="primary"
             small
           >
-            <template v-slot:opposite>
+            <template #opposite>
               <span class="headline font-weight-bold">
                 {{ formatYearMonth(item.start) }} –
                 {{ formatYearMonth(item.end) }}
