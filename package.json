@@ -15,19 +15,19 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "lodash": "^4.17.20",
-    "nuxt": "^2.14.10",
+    "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.16.0",
     "vue-chartjs": "^3.5.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
-    "@nuxtjs/eslint-module": "^3.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/vuetify": "^1.11.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-prettier": "^3.3.0",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1"
   }
