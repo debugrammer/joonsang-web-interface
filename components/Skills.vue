@@ -13,7 +13,7 @@
         <v-card outlined height="100%">
           <v-list-item two-line>
             <v-list-item-content>
-              <div class="overline mb-4">SKILLS</div>
+              <div class="overline">SKILLS</div>
               <v-list-item-title
                 class="headline mb-1"
                 v-text="item.name"

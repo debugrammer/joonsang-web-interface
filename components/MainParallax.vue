@@ -15,7 +15,7 @@
         </div>
       </div>
     </v-flex>
-    <v-flex xs12 mx-3>
+    <v-flex xs12 my-3 mx-3>
       <v-row align="center" justify="center">
         <div class="subtitle-1" v-text="$t('index.mainParallax.quote')"></div>
       </v-row>

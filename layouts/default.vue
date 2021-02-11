@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
     <app-toolbar></app-toolbar>
-    <v-content>
+    <v-main>
       <!-- Page Content -->
       <div class="page-wrapper">
         <nuxt />
@@ -13,7 +13,7 @@
           <strong>Joonsang.com</strong>
         </span>
       </v-footer>
-    </v-content>
+    </v-main>
     <!-- Go to top -->
     <app-fab></app-fab>
   </v-app>
