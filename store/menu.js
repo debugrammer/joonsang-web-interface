@@ -13,7 +13,7 @@ export const state = () => ({
       },
       {
         href: 'https://blog.naver.com/takane7',
-        icon: 'mdi-blogger',
+        icon: 'mdi-rss',
         target: '_blank'
       }
     ],
