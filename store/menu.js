@@ -7,13 +7,13 @@ export const state = () => ({
         target: '_blank'
       },
       {
-        href: 'https://www.linkedin.com/in/iowa7',
+        href: 'https://www.linkedin.com/in/debugrammer',
         icon: 'mdi-linkedin',
         target: '_blank'
       },
       {
-        href: 'https://blog.naver.com/takane7',
-        icon: 'mdi-rss',
+        href: 'https://blog.naver.com/debugrammer',
+        icon: 'mdi-image-text',
         target: '_blank'
       }
     ],
