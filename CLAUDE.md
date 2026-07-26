@@ -238,6 +238,15 @@ computed: {
 
 ## 배포
 
+### 브랜치·릴리즈 전략
+
+- **master 단일 브랜치 + 릴리즈 태그 `vX.Y.Z`** (develop 브랜치 없음 —
+  admin-web-interface의 develop/master 이원 전략과 다르다).
+- 릴리즈 시점: master에 푸시 후 해당 커밋에 `vX.Y.Z` 태그를 만들어 푸시한다.
+  태그 버전 = 루트·spa package.json 버전 (항상 동기 유지).
+
+### 배포 절차
+
 - 대상 서버: `/home/jpark/joonsang-web-interface` (PM2 cluster 2 인스턴스,
   `ecosystem.config.js`).
 - 절차: 서버에서 `pm2 delete joonsang-web` → `git pull` → `npm run deploy`.
