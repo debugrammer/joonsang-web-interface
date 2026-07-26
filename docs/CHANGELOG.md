@@ -4,6 +4,13 @@
 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따르고,
 버전은 [Semantic Versioning](https://semver.org/lang/ko/)을 따른다.
 
+## [2.0.1] - 2026-07-26
+
+### Changed
+
+- 배포 계정 변경: `jpark` → `debugrammer` (`ecosystem.config.js`의
+  스크립트·로그·pid 경로 — 서버 Rocky 8 재설치에 맞춘 계정 정비).
+
 ## [2.0.0] - 2026-07-26
 
 ### Changed

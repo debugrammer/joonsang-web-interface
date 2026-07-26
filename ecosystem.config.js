@@ -9,8 +9,8 @@ module.exports = {
        */
       name: 'joonsang-web',
       // Nuxt SSR 엔트리(server/index.js) → SPA standalone 엔트리 전환 (2.0.0)
-      script: '/home/jpark/joonsang-web-interface/server/standalone.js',
-      cmd: '/home/jpark/joonsang-web-interface',
+      script: '/home/debugrammer/joonsang-web-interface/server/standalone.js',
+      cmd: '/home/debugrammer/joonsang-web-interface',
       interpreter: 'node',
       interpreterArgs: '--max-old-space-size=128',
 
@@ -26,10 +26,10 @@ module.exports = {
        * Log files
        */
       log_date_format: 'YYYY-MM-DD HH:mm:ss.SSS Z',
-      error_file: '/home/jpark/logs/joonsang-web/joonsang-web-err.log',
-      out_file: '/home/jpark/logs/joonsang-web/joonsang-web-out.log',
+      error_file: '/home/debugrammer/logs/joonsang-web/joonsang-web-err.log',
+      out_file: '/home/debugrammer/logs/joonsang-web/joonsang-web-out.log',
       merge_logs: true,
-      pid_file: '/home/jpark/joonsang-web.pid',
+      pid_file: '/home/debugrammer/joonsang-web.pid',
 
       /*
        * Control flow

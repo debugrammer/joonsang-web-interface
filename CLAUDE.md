@@ -247,7 +247,7 @@ computed: {
 
 ### 배포 절차
 
-- 대상 서버: `/home/jpark/joonsang-web-interface` (PM2 cluster 2 인스턴스,
+- 대상 서버: `/home/debugrammer/joonsang-web-interface` (PM2 cluster 2 인스턴스,
   `ecosystem.config.js`).
 - 절차: 서버에서 `pm2 delete joonsang-web` → `git pull` → `npm run deploy`.
 - `npm run deploy` = `npm install` + `spa-build-prod`(서버에서 vite 빌드) +
