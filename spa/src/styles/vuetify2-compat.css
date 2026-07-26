@@ -1,0 +1,113 @@
+/*
+ * Vuetify 2 외형 호환 스타일
+ *
+ * 개별 페이지 수정 없이 Vuetify 2 기본값과의 외형 격차를 전역 1곳에서 복원한다.
+ * 모든 값은 vuetify@2.7.2(구 Nuxt) vs vuetify@3.x(설치 실물) dist CSS 기계 대조 실측.
+ * 레퍼런스(admin-web-interface vuetify2-compat.css)와 동일한 접근 — 이 프로젝트는
+ * 다크 테마이므로 theme--dark 값 기준으로 발췌했다.
+ *
+ * 선택자에 .v-application 접두 = 특이도 상향 — vuetify 컴포넌트 CSS(autoImport)가
+ * 이 파일보다 늦게 적재되면 동일 특이도 규칙이 무효화되는 것을 방지한다.
+ */
+
+/* v2 문단 기본 여백 — v3 리셋은 p 마진 0 (v2: .v-application p { margin-bottom: 16px }) */
+.v-application p {
+  margin-bottom: 16px;
+}
+
+/* ---------------------------------------------------------------------------
+ * v-card-title: v2는 여러 줄 줄바꿈(flex wrap + word-break) + 패딩 16px,
+ * v3는 한 줄 말줄임(nowrap + ellipsis) + 패딩 8px 16px + line-height 1.6.
+ * 포트폴리오 카드 타이틀(이미지 오버레이 포함)·About 카드 타이틀 격차의 직접 원인.
+ * ------------------------------------------------------------------------- */
+.v-application .v-card-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  hyphens: none;
+  word-break: break-all;
+  line-height: 2rem;
+  padding: 16px;
+}
+
+/* v-card-text: v2 행간 1.375rem·자간 .00714em (v3: 행간 상속·자간 .01785em) */
+.v-application .v-card-text {
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+}
+
+/* ---------------------------------------------------------------------------
+ * v-container: v2 패딩 12px 고정 (v3: 16px) — 페이지 전체 여백 격차
+ * ------------------------------------------------------------------------- */
+.v-application .v-container {
+  padding: 12px;
+}
+
+/* ---------------------------------------------------------------------------
+ * 툴바 컨텐츠 패딩: v2는 4px 16px — v3는 컨텐츠 패딩이 없어 로고·우측 버튼이
+ * 가장자리에 붙는다. v3의 first/last v-btn 4px 마진은 제거하고 v2의 아이콘
+ * 버튼 음수 마진(-12px) 규칙을 복원한다.
+ * ------------------------------------------------------------------------- */
+.v-application .v-toolbar__content {
+  padding: 4px 16px;
+}
+
+.v-application .v-toolbar__content > .v-btn:first-child {
+  margin-inline-start: 0;
+}
+
+.v-application .v-toolbar__content > .v-btn:last-child {
+  margin-inline-end: 0;
+}
+
+.v-application .v-toolbar__content > .v-btn.v-btn--icon:first-child {
+  margin-inline-start: -12px;
+}
+
+.v-application .v-toolbar__content > .v-btn.v-btn--icon:last-child {
+  margin-inline-end: -12px;
+}
+
+/* ---------------------------------------------------------------------------
+ * 다크 테마 표면 색: v2 고정값 복원
+ * - outlined 카드: v3는 배경 투명 — v2는 sheet 배경(#1E1E1E) + 고정 테두리
+ *   (rgba(255,255,255,.12)). 홈 카드(About·SkillSet·Skills)가 투명해진 원인.
+ * - footer: v2 #272727 (v3는 surface 상속)
+ * - divider: v2 고정 rgba(255,255,255,.12) — v3는 currentColor + opacity 조합
+ * ------------------------------------------------------------------------- */
+.v-theme--dark .v-card--variant-outlined {
+  background: #1e1e1e;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.v-theme--dark .v-footer {
+  background-color: #272727;
+}
+
+.v-theme--dark .v-divider {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  opacity: 1 !important;
+}
+
+/* ---------------------------------------------------------------------------
+ * v-timeline 컬럼 기하: v2는 중앙선 고정 50/50 분할(양쪽 max-width
+ * calc(50% - 48px)·구분자 min-width 96px) — v3 justify-auto는 콘텐츠 크기로
+ * 컬럼을 계산해 선이 중앙에서 벗어나고 긴 항목에서 폭이 불안정하다.
+ * 양면(기본) 모드에만 적용 — 단면(side-end, 모바일)은 v3 기본 유지.
+ * ------------------------------------------------------------------------- */
+.v-timeline--vertical.v-timeline--justify-auto:not(.v-timeline--side-end):not(
+    .v-timeline--side-start
+  ) {
+  grid-template-columns: calc(50% - 48px) 96px calc(50% - 48px);
+}
+
+/* ---------------------------------------------------------------------------
+ * 테이블 치수: v2 행 48px·헤더 48px (v3 기본 밀도: 52px/56px) — SkillSet 표
+ * ------------------------------------------------------------------------- */
+.v-table.v-table--density-default {
+  --v-table-row-height: 48px;
+  --v-table-header-height: 48px;
+}

@@ -1,34 +1,27 @@
 {
   "name": "joonsang-web-interface",
-  "version": "1.1.10",
+  "version": "2.0.0",
   "description": "Web developer Joonsang Park's website.",
   "author": "debugrammer",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "deploy": "npm install && nuxt build && pm2 start"
+    "dev": "npm run spa-build-dev && cross-env NODE_ENV=development nodemon server/standalone.js --watch server",
+    "spa-build-dev": "npm --prefix spa install --include=dev && npm --prefix spa run build-dev",
+    "spa-build-prod": "npm --prefix spa install --include=dev && npm --prefix spa run build-prod",
+    "deploy": "npm install && npm run spa-build-prod && pm2 start",
+    "lint": "eslint server && npm --prefix spa run lint"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/moment": "^1.6.1",
-    "chart.js": "^2.9.4",
+    "consola": "^3.4.2",
     "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "lodash": "^4.17.21",
-    "nuxt": "^2.15.8",
-    "nuxt-i18n": "^6.28.1",
-    "vue-chartjs": "^3.5.1"
+    "express": "^4.21.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.8",
-    "@nuxtjs/eslint-config": "^11.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/vuetify": "^1.12.1",
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "nodemon": "^2.0.14",
-    "prettier": "^2.4.1"
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^2.8.8"
   }
 }

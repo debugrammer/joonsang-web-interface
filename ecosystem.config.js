@@ -8,7 +8,8 @@ module.exports = {
        * General
        */
       name: 'joonsang-web',
-      script: '/home/jpark/joonsang-web-interface/server/index.js',
+      // Nuxt SSR 엔트리(server/index.js) → SPA standalone 엔트리 전환 (2.0.0)
+      script: '/home/jpark/joonsang-web-interface/server/standalone.js',
       cmd: '/home/jpark/joonsang-web-interface',
       interpreter: 'node',
       interpreterArgs: '--max-old-space-size=128',
