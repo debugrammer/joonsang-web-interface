@@ -45,8 +45,25 @@ function start() {
     })
   )
 
-  // SPA 폴백 — 비-API GET은 index.html (vue-router history 모드)
+  // dist 최상위 디렉토리 = 정적 자산 네임스페이스 (부팅 시 실측 — spa/public에
+  // 폴더가 추가돼도 목록 하드코딩 없이 자동 반영)
+  const assetDirs = fs
+    .readdirSync(spaDist, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => `/${entry.name}/`)
+
+  // SPA 폴백 — 비-API GET은 index.html (vue-router history 모드).
+  // 누락 정적 자산이 index.html 200으로 은폐되지 않도록 (a) 자산 네임스페이스
+  // 안의 확장자 있는 경로 (b) HTML을 받지 않는 서브리소스 요청(img·script 등)만
+  // 404 처리한다. 그 밖의 내비게이션은 경로의 점(.) 포함 여부와 무관하게 SPA로
+  // 폴백해 브랜드 404 화면(NotFound 라우트)을 유지한다.
   app.get(/^\/(?!status).*/, (req, res) => {
+    const isAssetPath = assetDirs.some((dir) => req.path.startsWith(dir))
+
+    if ((isAssetPath && path.extname(req.path)) || !req.accepts('html')) {
+      return res.status(404).type('text').send('Not Found')
+    }
+
     res.set('Cache-Control', 'no-cache')
     res.sendFile(path.join(spaDist, 'index.html'))
   })

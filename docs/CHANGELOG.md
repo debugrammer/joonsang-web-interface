@@ -4,6 +4,20 @@
 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따르고,
 버전은 [Semantic Versioning](https://semver.org/lang/ko/)을 따른다.
 
+## [2.0.2] - 2026-08-03
+
+### Fixed
+
+- **로케일 전환의 query/hash 유실·전환 불능** (Codex 교차 리뷰 R1 #4):
+  `AppToolbar.switchLocalePath()`가 fullPath 문자열 치환이라 `/en?x=1`·`/en#foo`
+  처럼 프리픽스 바로 뒤에 `?`·`#`이 오면 미치환되어 kr 전환이 되지 않던 문제 —
+  `$route.path` 기반 치환 + `{ path, query, hash }` location 객체 반환으로 수정.
+- **누락 정적 자산이 index.html 200으로 은폐** (R1 #6): SPA 폴백이 확장자 있는
+  요청까지 index.html로 응답하던 것을 404로 수정 (구 Nuxt 서버 동작 보존,
+  자산 누락이 모니터링에 드러나도록).
+- **404 등 description 없는 라우트로 이동 시 이전 페이지 meta 잔존** (R1 #7):
+  라우터 `afterEach`가 기본 description으로 복원하도록 수정.
+
 ## [2.0.1] - 2026-07-26
 
 ### Changed

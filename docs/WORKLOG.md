@@ -5,6 +5,60 @@
 
 ---
 
+## 2026-08-03 — Codex 교차검증 Round 1 (마이그레이션 완성도)
+
+### 작업 내용
+
+- 사용자 지시로 Nuxt 2 → Vue 3 마이그레이션 완성도를 Codex CLI(0.146.0)
+  적대적 교차 리뷰로 검증. 방식은 harness-framework-jspark03의
+  `prompts/review.md`·`codex-review-runner.md` 패턴 + ai-trend-intelligence
+  세션(2026-08-02)의 Windows 노하우(샌드박스 장애 우회 — 현재 코드와 0fa0d0f
+  원본을 `===== FILE: =====` 번들로 stdin 첨부, 명령 실행 금지 지시) 재적용.
+- **리뷰 문서는 저장소 밖 관리** (소유자 결정 — 공개 저장소에 리뷰 문서 미포함):
+  `D:\workspace\docs\joonsang-web-interface\reviews\review-2026-08-03-codex-1.md`
+  (Claude 교차 검증 부록 포함).
+
+### 결과 (Codex 원판정 BLOCKING 6 / WARNING 2 → Claude 검증 후 조정)
+
+- **오검 반박 3건**: RadarController 미등록(vue-chartjs 5가 자동 등록),
+  Skills `xs="12"` 누락(Vuetify 2 VCol에 xs prop 자체가 없음 — 원본도 무동작),
+  v-img `contain` 제거(Vuetify 3 기본값이 contain) — 전부 설치 패키지 소스 실측.
+- **실질 BLOCKING 2건**: ① `/en?query`·`/en#hash`에서 switchLocalePath 미치환
+  (AppToolbar.vue:116 정규식 lookahead가 `?`·`#` 미처리) ② 누락 정적 자산
+  요청이 404 대신 index.html 200 (standalone.js catch-all).
+- **WARNING**: 403/500 화면 부재(의도 문서화됨 — 심각도 조정), 404 이동 시
+  이전 description 잔존, 1:1 검증 테스트 부재.
+- 콘텐츠 1:1은 별도 실측 — 로케일 2종·스토어 5종 데이터 원본과 전량 동일.
+
+### Round 1 수정 (2.0.2) → Round 2 재리뷰 → Round 3
+
+- [x] switchLocalePath query/hash 처리 수정 — `$route.path` 기반 치환 +
+  `{ path, query, hash }` location 객체 반환
+- [x] 정적 자산 404 처리 후 SPA 폴백
+- [x] afterEach 기본 description 복원
+- [x] Codex Round 2 재리뷰 (`review-2026-08-03-codex-2.md`)
+
+**Round 2 결과**: R1 #4·#7 해소 판정, #6 부분 해소 — 신규 BLOCKING 1건:
+확장자 단독 판정이 `/foo.bar` 같은 dot 포함 내비게이션 URL까지 서버 평문
+404로 처리해 브랜드 404(NotFound 라우트) 화면을 잃음.
+
+**Round 2 수정**: 404 조건을 (a) 자산 네임스페이스(dist 최상위 디렉토리를
+부팅 시 실측) 안의 확장자 있는 경로 (b) HTML 미수용 서브리소스 요청으로
+한정 — 그 외 내비게이션은 dot 여부와 무관하게 SPA 폴백. 스모크 실측:
+SPA 라우트(trailing slash 포함)·실존 자산 200, 네임스페이스 누락 자산 4종
+404, `/foo.bar`(Accept: html)는 index.html 200 → NotFound 렌더.
+
+- [x] Codex Round 3 재리뷰 (`review-2026-08-03-codex-3.md`) —
+  **BLOCKING 0 / WARNING 2 — PASS.** 라운드 경과: R1 B6(3건 오검 반박) →
+  R2 B1 → R3 PASS. 상세는 CHANGELOG 2.0.2 항목.
+
+### 잔존 WARNING (후속 후보, 대응 불요 합의)
+
+- 403/500 브랜드 오류 화면 부재 — SPA 전환에 따른 의도된 차이로 문서화됨
+  (NotFound.vue 주석). 필요해지면 Express 오류 미들웨어로 구현.
+- URL·자산 응답·로케일 전환 자동 회귀 테스트 부재 — 테스트 도입 시
+  `/portfolio` 디렉토리 충돌·dot 내비게이션·누락 자산 케이스부터 고정.
+
 ## 2026-07-26 (3차) — 배포 계정 변경 (2.0.1)
 
 - 서버 Rocky 8 재설치를 계기로 배포 계정을 `jpark` → `debugrammer`로 정비

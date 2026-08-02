@@ -62,6 +62,10 @@ router.beforeEach((to) => {
   return true
 })
 
+// index.html 기본 meta description — 라우트에 description이 없으면 이 값으로
+// 복원한다 (이전 페이지 값 잔존 방지, Nuxt 전역 기본값 등가)
+const DEFAULT_DESCRIPTION = "Web developer Joonsang Park's website."
+
 // Nuxt head() titleTemplate('%s - Joonsang.com') 등가 — 라우트 meta 기반
 router.afterEach((to) => {
   document.title = to.meta.title
@@ -69,8 +73,11 @@ router.afterEach((to) => {
     : 'Joonsang.com'
 
   const description = document.querySelector('meta[name="description"]')
-  if (description && to.meta.description) {
-    description.setAttribute('content', to.meta.description)
+  if (description) {
+    description.setAttribute(
+      'content',
+      to.meta.description || DEFAULT_DESCRIPTION
+    )
   }
 })
 

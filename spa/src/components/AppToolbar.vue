@@ -110,16 +110,19 @@ export default {
     ...mapState(useMenuStore, { menu: 'getMenuData' })
   },
   methods: {
-    // nuxt-i18n switchLocalePath 등가 — 현재 경로의 로케일 프리픽스만 교체
+    // nuxt-i18n switchLocalePath 등가 — 현재 경로의 로케일 프리픽스만 교체.
+    // path·query·hash를 분리해 다룬다 (fullPath 문자열 치환은 `/en?x=1`처럼
+    // 프리픽스 바로 뒤에 ?·#이 오면 미치환 — codex R1 #4)
     switchLocalePath(locale) {
-      const suffix =
-        this.$route.fullPath.replace(/^\/en(?=\/|$)/, '') || '/'
+      const suffix = this.$route.path.replace(/^\/en(?=\/|$)/, '') || '/'
+      const path =
+        locale === DEFAULT_LOCALE
+          ? suffix
+          : suffix === '/'
+            ? `/${locale}`
+            : `/${locale}${suffix}`
 
-      if (locale === DEFAULT_LOCALE) {
-        return suffix
-      }
-
-      return suffix === '/' ? `/${locale}` : `/${locale}${suffix}`
+      return { path, query: this.$route.query, hash: this.$route.hash }
     },
     path(link) {
       if (this.$i18n.locale === this.$i18n.fallbackLocale) {
